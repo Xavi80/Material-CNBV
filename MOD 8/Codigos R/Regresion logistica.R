@@ -98,10 +98,10 @@ ggplot(model.data, aes(index, .std.resid)) +
   theme_bw()
 
 #Filter potential influential data points with abs(.std.res) > 3:
-model.data %>% 
-  filter(abs(.std.resid) > 3)
+influential<-model.data %>% 
+  filter(abs(.std.resid) > 2)
 
-
+influential
 
 ###################Stepwise Logistic Regression Essentials in R
 
