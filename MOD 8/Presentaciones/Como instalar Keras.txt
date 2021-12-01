@@ -1,0 +1,19 @@
+Cómo instalar Keras
+Para quien nunca lo haya hecho, os dejo a continuación las instrucciones de cómo instalar Keras y Tensorflow para esta sección (fijaros que solo instalamos Keras ya que el paquete de Keras instala de rebote Tensorflow):
+
+Usuarios de Linux y Mac, a través de vuestro terminal.
+En Mac, lo más fácil es pulsar cmd + espacio, y en spotlight escribir "terminal".
+En Linux, es fácil de encontrar ya que suele estar en el lado izquierdo de vuestra pantalla.
+Luego dentro del terminal, copia y pega el siguiente comando:
+
+conda install -c conda-forge keras
+
+Usuarios de Windows users, abrid la aplicación de anaconda prompt, que podéis encontrar desde:
+El botón de Windows en la esquina inferior izquierda-> Lista de programas -> anaconda -> anaconda prompt
+Luego, dentro de anaconda prompt,  copia y pega el siguiente comando:
+
+conda install -c conda-forge keras
+
+
+
+Disfruta de la sección de Deep Learning!

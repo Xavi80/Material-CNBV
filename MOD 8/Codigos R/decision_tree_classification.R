@@ -1,8 +1,11 @@
 # Decision Tree Classification
 
-# Importing the dataset
+getwd()
+setwd("C:/Users/javij/OneDrive/Documentos/GitHub/Material-CNBV/MOD 8/Datasets")
 dataset = read.csv('Social_Network_Ads.csv')
+head(dataset)
 dataset = dataset[3:5]
+head(dataset)
 
 # Encoding the target feature as factor
 dataset$Purchased = factor(dataset$Purchased, levels = c(0, 1))
@@ -63,5 +66,9 @@ points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
 # Plotting the tree
-plot(classifier)
-text(classifier)
+#plot(classifier)
+#text(classifier)
+install.packages("rpart.plot")
+library(rpart)
+library(rpart.plot)
+rpart.plot(classifier, extra = 106)
